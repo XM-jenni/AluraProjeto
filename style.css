@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-primaria: #E5E5E5;
+    --cor-secundaria:#F15F8B;
+    --cor-terciaria: #495057;
+    --cor-hover: #D8DFE8;
+    --font-primaria: 'Inter',sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+
+body {
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    background-size: 100%;
+}
+
+.paginacentral {
+    padding: 15px 0;
+    gap: 470px;
+    margin: 10%;
+    display: flex;
+    align-items:center;
+    justify-content:left;
+}
+
+.paginacentral__imagem {
+    justify-content: left;
+}
+
+.entrada {
+    margin: 0% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.entrada__secao {
+    flex-direction: column;
+    width: 770px;
+}
+
+.entrada__secao__texto {
+    font-family: var(--font-primaria);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-align: center;
+    justify-content: center;
+}
+
+.entrada__secao__texto__area {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    width: 42.5rem;
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    height: 430px;
+    font-weight: 200;
+    padding: 30px 30px 30px 30px; 
+    resize: none; 
+    box-shadow: 0 0 0 0; 
+    border: 0 none;
+    outline: 0; 
+}
+
+.entrada__info {
+    padding: 15px 0px 15px 0px;
+    display: flex;
+
+}
+
+.entrada__regras {
+    color: #495057;
+    font-family: var(--font-primaria);
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.entrada__botoes {
+    padding: 1% 0 3% 0;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.entrada__botoes__criptografar {
+    box-shadow: none;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600px;
+    padding: 24px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-family: var(--font-primaria);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: 400ms;
+}
+
+.entrada__botoes__criptografar :hover {
+    box-shadow: 0px 0px 10px 10px var(--cor-hover);
+    font-size: 20px;
+}
+
+.entrada__botoes__descriptografar {
+    box-shadow: none;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600px;
+    padding: 24px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-family: var(--font-primaria);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: 400ms;
+}
+
+.entrada__botoes__descriptografar :hover {
+    box-shadow: 0px 0px 10px 10px var(--cor-hover);
+    font-size: 20px;
+}
+
+.saida__dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 300px;
+    height: 500px;
+    border-radius: 30px;
+    border: 3px solid var(--cor-primaria);
+    padding: 30px 30px 30px 30px;
+}
+
+.saida__dados__texto {
+    font-family: var(--font-primaria);
+    color: var(--cor-terciaria);
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+.saida__conteudo {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    padding: 30px 30px 30px 30px;
+}
+
+.saida__conteudo__texto {
+    background-color: none;
+    border: none;
+    width: 300px;
+    height: 600px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: var(--font-primaria);
+    resize: none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.saida__conteudo__copiar {
+    box-shadow: none;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 24px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-family: var(--font-primaria);
+    transition: 400ms;
+}
+
+.rodape {
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__final {
+    justify-content: center;
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+    font-size: 12px;
+    align-items: center;
+    font-weight: 900;
+}
+
+@media (max-width:1200px) {
+    .entrada {
+        flex-direction: column;
+        }
+    .entrada__secao {
+        width: auto;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .saida__dados {
+        width: auto;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .saida__conteudo {
+        width: auto;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .saida__conteudo__texto {
+        width: auto;
+        height: auto;
+        margin-bottom: 10%; 
+    }
+}
+
+@media (max-width:800px) {
+    .paginacentral {
+        justify-content: center;
+    }
+    .entrada {
+        flex-direction: column;
+        padding: 10px 10px;
+        margin: 10px 10px;
+    }
+    .entrada__secao {
+        width: 100%;
+    }
+    .entrada__secao__texto {
+        align-items: center;
+    }
+    .entrada__info {
+        align-items: center;
+    }
+    .entrada__botoes {
+        flex-direction: column;
+        font-size: 50%;
+        gap: 10px;
+        align-items: center;
+    }
+    .saida__dados {
+        width: 70%;
+        height: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .saida__conteudo {
+        width: 70%;
+        height: 70%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .saida__conteudo__texto {
+        width: 70px;
+        height: 500px;
+        padding: 0px;
+        margin: 0px;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    .rodape {
+        justify-content: center;
+        align-items: center;
+    }
+}
+

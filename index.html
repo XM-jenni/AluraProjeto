@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Projeto Alura</title>
+    </head>
+    <body>
+        <header class="paginacentral">
+            <img class="paginacentral__imagem" src="/Images/FrameA.png" alt="Logo Alura">
+        </header>
+        <main class="entrada">
+            <section class="entrada__secao">
+                <div class="entrada__secao__texto">
+                    <textarea class="entrada__secao__texto__area" id="textoEntrada" placeholder=" Digite sua mensagem aqui"></textarea>
+                </div>
+                <div class="entrada__info">
+                    <p class="entrada__regras">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="entrada__botoes">
+                    <button class="entrada__botoes__criptografar" onclick="escolherOpcao ('criptografar')">Criptografar</button>
+                    <button class="entrada__botoes__descriptografar" onclick="escolherOpcao ('descriptografar')">Descriptografar</button>
+                </div>
+            </section>
+            <section class="saida">
+                <div class="saida__dados">
+                    <img class="saida__dados__imagem" src="/Images/FrameB.svg" alt="mulher segurando lupa">
+                    <p class="saida__dados__texto"><strong>Mensagem não encontrada</strong><br><br>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div class="saida__conteudo">
+                    <textarea class="saida__conteudo__texto" id="resultado" readonly></textarea>
+                    <button class="saida__conteudo__copiar" onclick="copiarTexto ()" id="copia">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+         <p class="rodape__final">Desenvolvido por Jennifer Mayhara para o Projeto ONE-Oracle Next Education</p>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>
